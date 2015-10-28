@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoFramework", "UndoFramework\UndoFramework.csproj", "{211753FC-8C4D-4F05-AB4B-130FABECF30E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalSample", "src\MinimalSample\MinimalSample.csproj", "{70E3710E-BBBD-4EBD-B789-6296F6810651}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoFramework.UnitTests", "UndoFramework.UnitTests\UndoFramework.UnitTests.csproj", "{25BFDA28-84F6-4946-9641-B61AAE54A943}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsSample", "src\WinFormsSample\WinFormsSample.csproj", "{A908BC63-380B-4326-B309-C017CAE568E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalSample", "MinimalSample\MinimalSample.csproj", "{70E3710E-BBBD-4EBD-B789-6296F6810651}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoFramework", "src\UndoFramework\UndoFramework.csproj", "{211753FC-8C4D-4F05-AB4B-130FABECF30E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsSample", "WinFormsSample\WinFormsSample.csproj", "{A908BC63-380B-4326-B309-C017CAE568E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UndoFramework.UnitTests", "src\UndoFramework.UnitTests\UndoFramework.UnitTests.csproj", "{25BFDA28-84F6-4946-9641-B61AAE54A943}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

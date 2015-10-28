@@ -19,6 +19,10 @@ This is a very simple framework to add Undo/Redo functionality to your .NET appl
     actionManager.Undo();
     actionManager.Redo();
 
+![Undo actions][1]
+
+[1]: ActionsChart.png
+
 ## Blog posts:
 
  * [http://blogs.msdn.com/b/kirillosenkov/archive/2009/06/29/new-codeplex-project-a-simple-undo-redo-framework.aspx](http://blogs.msdn.com/b/kirillosenkov/archive/2009/06/29/new-codeplex-project-a-simple-undo-redo-framework.aspx)

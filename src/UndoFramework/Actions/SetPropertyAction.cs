@@ -11,7 +11,7 @@ namespace GuiLabs.Undo
         public SetPropertyAction(object parentObject, string propertyName, object value)
         {
             ParentObject = parentObject;
-            Property = parentObject.GetType().GetProperty(propertyName);
+            Property = parentObject.GetType().GetTypeInfo().GetDeclaredProperty(propertyName);
             Value = value;
         }
 

@@ -104,6 +104,16 @@ namespace GuiLabs.Undo
             }
         }
 
+        public IEnumerable<IAction> EnumRedoableActions()
+        {
+            SimpleHistoryNode current = CurrentState;
+            while (current != null && current.NextAction != null)
+            {
+                yield return current.NextAction;
+                current = current.NextNode;
+            }
+        }
+
         public void MoveForward()
         {
             if (!CanMoveForward)

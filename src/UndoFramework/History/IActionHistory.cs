@@ -28,6 +28,7 @@ namespace GuiLabs.Undo
         SimpleHistoryNode CurrentState { get; }
 
         IEnumerable<IAction> EnumUndoableActions();
+        IEnumerable<IAction> EnumRedoableActions();
 
         event EventHandler CollectionChanged;
     }

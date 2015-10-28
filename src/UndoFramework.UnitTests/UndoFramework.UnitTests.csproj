@@ -33,6 +33,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionManagerTests.cs" />
     <Compile Include="ActionsTests.cs" />
     <Compile Include="TransactionTests.cs" />
   </ItemGroup>

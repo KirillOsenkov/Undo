@@ -298,6 +298,11 @@ namespace GuiLabs.Undo
             return History.EnumUndoableActions();
         }
 
+        public IEnumerable<IAction> EnumRedoableActions()
+        {
+            return History.EnumRedoableActions();
+        }
+
         private IActionHistory mHistory;
         internal IActionHistory History
         {

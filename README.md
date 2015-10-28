@@ -1,10 +1,10 @@
 # Undo
 This is a very simple framework to add Undo/Redo functionality to your .NET applications. Supports unlimited undo-redo, nested transactions and action merging (to merge a series of consecutive and/or nested actions into one).
 
-NuGet:
+## NuGet:
 [http://nuget.org/packages/guilabs.undo](http://nuget.org/packages/guilabs.undo)
 
-Sample:
+## Sample:
 
     var actionManager = new ActionManager();
     var action1 = new CallMethodAction(

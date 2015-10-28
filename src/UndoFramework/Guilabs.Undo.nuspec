@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>GuiLabs.Undo</id>
+    <summary>A simple .NET Undo/Redo framework</summary>
+    <description>
+      A simple .NET Undo/Redo framework with mergeable actions and composite transactions.
+    </description>
+    <dependencies>
+    </dependencies>
+
+    <language>en-US</language>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <version>$currentVersion$</version>
+    <authors>Kirill Osenkov</authors>
+    <title>Undo Framework</title>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/KirillOsenkov/Undo</projectUrl>
+    <releaseNotes></releaseNotes>
+    <tags>Undo Redo .NET</tags>
+  </metadata>
+  <files>
+    <file src="GuiLabs.Undo.dll" target="lib\dotnet" />
+  </files>
+</package>

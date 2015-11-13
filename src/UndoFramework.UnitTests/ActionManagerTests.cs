@@ -70,5 +70,40 @@ namespace UndoFramework.UnitTests
                 { action1, action2 }));
             Assert.AreEqual(0, actionManager.EnumRedoableActions().Count());
         }
+
+        [TestMethod]
+        public void ShouldRaiseCollectionChangedEventForFirstAction()
+        {
+            int collectionChanges = 0;
+
+            var actionManager = new ActionManager();
+            actionManager.CollectionChanged += (sender, e) =>
+            {
+                collectionChanges++;
+            };
+
+            var action = new CallMethodAction(() => { }, () => { });
+            actionManager.Execute(action);
+            Assert.AreEqual(1, collectionChanges);
+        }
+
+        [TestMethod]
+        public void ShouldRaiseCollectionChangedEventForFirstTransaction()
+        {
+            int collectionChanges = 0;
+
+            var actionManager = new ActionManager();
+            actionManager.CollectionChanged += (sender, e) =>
+            {
+                collectionChanges++;
+            };
+
+            var action = new CallMethodAction(() => { }, () => { });
+            var transaction = actionManager.CreateTransaction();
+            transaction.Add(action);
+            transaction.Commit();
+            Assert.AreEqual(1, collectionChanges);
+        }
+
     }
 }

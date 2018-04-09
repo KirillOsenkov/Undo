@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using GuiLabs.Undo;
-
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UndoFramework.UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class ActionsTests
     {
-        [TestMethod]
+        [Test]
         public void AddItemActionWorks()
         {
             List<string> list = new List<string>();
@@ -23,7 +22,7 @@ namespace UndoFramework.UnitTests
             Assert.AreEqual("foo", list[0]);
         }
 
-        [TestMethod]
+        [Test]
         public void CallMethodActionWorks()
         {
             bool capturedFlag = false;
@@ -39,7 +38,7 @@ namespace UndoFramework.UnitTests
             Assert.IsTrue(capturedFlag);
         }
 
-        [TestMethod]
+        [Test]
         public void SetPropertyActionWorks()
         {
             var instance = new Exception();

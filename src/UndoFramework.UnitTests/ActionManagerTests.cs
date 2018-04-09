@@ -1,14 +1,14 @@
 ﻿using System.Linq;
 using System.Text;
 using GuiLabs.Undo;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UndoFramework.UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class ActionManagerTests
     {
-        [TestMethod]
+        [Test]
         public void TestEndToEnd1()
         {
             var actionManager = new ActionManager();
@@ -71,7 +71,7 @@ namespace UndoFramework.UnitTests
             Assert.AreEqual(0, actionManager.EnumRedoableActions().Count());
         }
 
-        [TestMethod]
+        [Test]
         public void ShouldRaiseCollectionChangedEventForFirstAction()
         {
             int collectionChanges = 0;
@@ -87,7 +87,7 @@ namespace UndoFramework.UnitTests
             Assert.AreEqual(1, collectionChanges);
         }
 
-        [TestMethod]
+        [Test]
         public void ShouldRaiseCollectionChangedEventForFirstTransaction()
         {
             int collectionChanges = 0;

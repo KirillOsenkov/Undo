@@ -47,6 +47,7 @@ namespace WinFormsSample
             guard = true;
             multilevelTextboxActionManager.Undo();
             UpdateMultilevelUndoRedoButtons();
+            oldText = MultilevelTextbox.Text;
             guard = false;
         }
 
@@ -59,6 +60,7 @@ namespace WinFormsSample
             guard = true;
             multilevelTextboxActionManager.Redo();
             UpdateMultilevelUndoRedoButtons();
+            oldText = MultilevelTextbox.Text;
             guard = false;
         }
     }

@@ -1,10 +1,10 @@
 ﻿using System;
 using GuiLabs.Undo;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 
 namespace UndoFramework.UnitTests
 {
-    [TestClass]
+    [TestFixture]
     public class TransactionTests
     {
         public TestContext TestContext { get; set; }
@@ -31,7 +31,7 @@ namespace UndoFramework.UnitTests
         //
         #endregion
 
-        [TestMethod]
+        [Test]
         public void Transactions()
         {
             var instance = new Exception();
@@ -54,7 +54,7 @@ namespace UndoFramework.UnitTests
             Assert.AreEqual(instance.Source, "red");
         }
 
-        [TestMethod]
+        [Test]
         public void ThrowingActionInsideTransactionWillRollback()
         {
             ActionManager am = new ActionManager();
